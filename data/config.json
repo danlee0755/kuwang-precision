@@ -1,440 +1,176 @@
 {
   "company": {
-    "name": "Dongguan Kuwang Precision Manufacturing Co., Ltd",
-    "intro": "Headquartered in Dongguan — the world-renowned 'World's Factory' and China's premier hub for precision manufacturing — Dongguan Kuwang Precision Manufacturing Co., Ltd is a trusted global partner for rapid prototyping, CNC machining, vacuum casting, sheet metal fabrication, and low-volume production. With over 15 years of industry experience, we serve clients across North America, Europe, Asia, and Oceania, delivering high-precision prototypes and end-use parts with industry-leading speed and quality.\n\nOur state-of-the-art facility houses 50+ advanced CNC machines, 5-axis machining centers, industrial-grade 3D printers (SLA, SLS, SLM, FDM), vacuum casting systems, and a full suite of inspection equipment including CMM and laser scanners. We specialize in producing complex geometries, tight-tolerance components, and functional prototypes from over 60 engineering-grade materials including aluminum alloys, stainless steel, titanium, brass, PEEK, polycarbonate, and carbon-fiber-reinforced composites.\n\nOur ISO 9001:2015 certified quality management system ensures every part meets your exact specifications. Whether you need a single prototype within 24 hours or 10,000 production units, Kuwang delivers precision, reliability, and exceptional value. Partner with us to transform your concepts into reality — faster than ever before.",
-    "contactPerson": "Mr. Li Wei",
-    "phone": "+86-769-8888-6666",
-    "address": "No. 88, Zhen'an Road, Chang'an Town, Dongguan City, Guangdong Province 523850, China",
-    "email": "info@kuwang-precision.com",
+    "name": "Dongguan Kuwang precison manufacturing Co.,Ltd",
+    "intro": "This is a professional rapid prototyping and manufacturing company headquartered in Dongguan, China — globally recognized as the \"World Factory\" and a premier hub for precision machining and manufacturing excellence.\n\nLeveraging Dongguan's world-class industrial ecosystem, unrivaled supply chain depth, and decades of manufacturing expertise, we deliver high-quality prototypes and low-to-mid volume production parts with exceptional speed and precision. Our comprehensive capabilities include CNC machining, 3D printing (SLA/SLS/FDM), vacuum casting, sheet metal fabrication, and injection molding, covering a wide range of materials from engineering plastics to aerospace-grade metals.We proudly serve clients across North America, Europe, Australia, and beyond, partnering with industries including consumer electronics, automotive, medical devices, aerospace, and industrial equipment. From concept to finished prototype in as little as 3–5 business days, we help global innovators accelerate their product development cycles with confidence. At Precision Proto Manufacturing, quality is never compromised. Every part undergoes rigorous inspection to meet international standards, backed by transparent communication and dedicated project management throughout.\n\nYour vision. Our craftsmanship. Delivered worldwide.",
+    "contactPerson": "Dan Lee",
+    "phone": "+8618033494367",
+    "address": "619, Zengtian industrial zone, Dongguan city, Guangdong province, China",
+    "email": "danlee0755@gmail.com",
     "social": {
-      "whatsapp": "+8613812345678",
-      "facebook": "KuwangPrecision",
-      "linkedin": "company/kuwang-precision-manufacturing"
+      "whatsapp": "+8618033494367",
+      "facebook": "",
+      "linkedin": "https://www.linkedin.com/in/dan-lee-626542253/"
     }
   },
   "homepage": {
-    "videoUrl": "videos/601.mp4",
+    "videoUrl": "C:\\Users\\MSI\\rapid-prototyping-website\\videos\\601.mp4",
     "videoPoster": ""
   },
   "products": [
     {
-      "id": "prod-001",
-      "name": "5-Axis CNC Machined Aerospace Impeller",
-      "thumbnail": "",
+      "id": "id_1780261801368_2d6a5x",
+      "name": "Metal_CNC-Aluminum-Precision-Enclosure",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\01_Metal_CNC-Aluminum-Precision-Enclosure.png",
       "thumbnailVideo": "",
-      "shortDesc": "Complex titanium alloy impeller with 17 curved blades machined on 5-axis CNC with ±0.005mm precision.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "This aerospace-grade impeller demonstrates our advanced 5-axis simultaneous machining capability. The part features 17 compound-curved blades with undercut geometries that can only be produced on multi-axis equipment. Manufactured from Ti-6Al-4V titanium alloy, the impeller achieves a surface roughness of Ra 0.4μm on all aerodynamic surfaces.\n\nKey highlights:\n• 5-axis simultaneous toolpath generation using HyperMill CAM software\n• In-process probing for real-time dimensional verification\n• Post-machining stress relief treatment\n• 100% blade geometry inspection on Zeiss CMM",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Titanium Alloy Ti-6Al-4V (Grade 5)"},
-          {"name": "Process", "value": "5-Axis CNC Machining + Stress Relief"},
-          {"name": "Dimensions", "value": "Ø 180mm × 65mm"},
-          {"name": "Tolerance", "value": "±0.005mm on critical surfaces"},
-          {"name": "Surface Finish", "value": "Ra 0.4μm (aerodynamic surfaces)"},
-          {"name": "Lead Time", "value": "5-7 working days"},
-          {"name": "Inspection", "value": "CMM Full Geometric Report + Surface Profilometry"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-002",
-      "name": "SLM 3D Printed Conformal Cooling Mold Insert",
-      "thumbnail": "",
+      "id": "id_1780262479772_letlal",
+      "name": "Stainless-Steel-Precision-Gear-Assembly",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\02_Metal_Stainless-Steel-Precision-Gear-Assembly.png",
       "thumbnailVideo": "",
-      "shortDesc": "Maraging steel injection mold insert with internal conformal cooling channels printed via Selective Laser Melting.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "This injection mold insert showcases the power of metal additive manufacturing for tooling applications. The conformal cooling channels follow the contour of the mold cavity, reducing cycle time by 35% compared to conventional straight-drilled channels. Printed in maraging steel 1.2709 on an EOS M290 SLM system.\n\nBenefits demonstrated:\n• 35% reduction in injection molding cycle time\n• Uniform mold temperature distribution (±2°C across cavity)\n• Eliminated hot spots and warpage defects\n• Integrated lattice structures for weight reduction",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Maraging Steel 1.2709 (MS1)"},
-          {"name": "Process", "value": "SLM (Selective Laser Melting) + Heat Treatment"},
-          {"name": "Dimensions", "value": "120mm × 80mm × 45mm"},
-          {"name": "Layer Thickness", "value": "40μm"},
-          {"name": "Hardness", "value": "52-54 HRC (post heat treatment)"},
-          {"name": "Lead Time", "value": "3-5 working days"},
-          {"name": "Application", "value": "High-volume plastic injection molding"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-003",
-      "name": "Carbon Fiber Drone Airframe Components",
-      "thumbnail": "",
+      "id": "id_1780262485150_mbs4xh",
+      "name": "Copper-Heatsink",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\03_Metal_Copper-Heatsink.png",
       "thumbnailVideo": "",
-      "shortDesc": "Lightweight carbon fiber reinforced polymer drone frame parts produced via CNC routing with precision assembly.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Complete set of carbon fiber drone airframe components including main frame plates, arm assemblies, and mounting brackets. CNC routed from 3K twill-weave carbon fiber sheets with precision edge finishing. The components achieve an exceptional strength-to-weight ratio essential for high-performance UAV applications.\n\nFeatures:\n• 3K twill-weave carbon fiber with epoxy matrix\n• CNC routed with diamond-coated tooling for clean edges\n• Countersunk holes for flush-fit fasteners\n• Compatible with standard 250mm and 300mm racing drone configurations\n• Total frame weight under 120g assembled",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "3K Carbon Fiber Reinforced Epoxy (CFRP)"},
-          {"name": "Process", "value": "CNC Routing + Edge Sealing"},
-          {"name": "Thickness", "value": "2mm / 3mm / 4mm plate options"},
-          {"name": "Tolerance", "value": "±0.05mm"},
-          {"name": "Surface", "value": "Matte finish with edge sealant"},
-          {"name": "Lead Time", "value": "2-3 working days"},
-          {"name": "Quantity", "value": "6 plates + mounting hardware per kit"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-004",
-      "name": "Medical Device Surgical Guide Prototype",
-      "thumbnail": "",
+      "id": "id_1780262489564_2g5g1l",
+      "name": "Titanium-Medical-Orthopedic-Bracket",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\04_Metal_Titanium-Medical-Orthopedic-Bracket.png",
       "thumbnailVideo": "",
-      "shortDesc": "Patient-specific surgical cutting guide produced in medical-grade PEEK via SLA 3D printing and CNC finishing.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Custom surgical cutting guide prototype manufactured for pre-clinical validation. The guide is SLA 3D printed in biocompatible clear resin for visualization of underlying bone structure, then precision-finished on CNC for mating surface accuracy. This hybrid process combines the geometric freedom of additive manufacturing with the precision of subtractive finishing.\n\nProcess validation:\n• CT scan to CAD model conversion\n• Surgical planning integration with guide design\n• SLA printing at 50μm layer resolution\n• CNC finishing of bone-contact surfaces to ±0.05mm\n• Sterilization validation included",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Medical-Grade PEEK / Biocompatible Clear Resin"},
-          {"name": "Process", "value": "SLA 3D Printing + CNC Post-Finishing"},
-          {"name": "Dimensions", "value": "Custom per patient anatomy scan"},
-          {"name": "Accuracy", "value": "±0.05mm on mating surfaces"},
-          {"name": "Layer Resolution", "value": "50μm (SLA)"},
-          {"name": "Lead Time", "value": "3-4 working days"},
-          {"name": "Application", "value": "Orthopedic surgical planning & pre-clinical testing"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-005",
-      "name": "Aluminum Engine Intake Manifold Prototype",
-      "thumbnail": "",
+      "id": "id_1780262492888_oeaxl4",
+      "name": "Automotive-Stamped-Metal-Part",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\05_Metal_Automotive-Stamped-Metal-Part.png",
       "thumbnailVideo": "",
-      "shortDesc": "Fully functional aluminum intake manifold with internal port geometry optimized via CFD analysis and CNC machined.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Functional prototype of a high-performance engine intake manifold machined from solid 6061-T6 aluminum billet. Internal runner geometry was optimized through computational fluid dynamics (CFD) analysis to achieve equal airflow distribution across all 4 cylinders. The manifold features integrated velocity stacks and a tapered plenum design for optimal volumetric efficiency across the RPM range.\n\nPerformance:\n• CFD-validated runner geometry for balanced cylinder filling\n• Tapered plenum reduces pressure drop at high RPM\n• Billet construction eliminates casting porosity concerns\n• Compatible with standard 60mm throttle body\n• Surface treated with black anodize for durability",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "6061-T6 Aluminum Billet"},
-          {"name": "Process", "value": "CNC Machining + Anodizing"},
-          {"name": "Dimensions", "value": "320mm × 180mm × 140mm"},
-          {"name": "Tolerance", "value": "±0.02mm (port matching surfaces)"},
-          {"name": "Surface", "value": "Black anodized (Type II, Class 2)"},
-          {"name": "Lead Time", "value": "7-10 working days"},
-          {"name": "Application", "value": "4-cylinder high-performance engine"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-006",
-      "name": "Vacuum Cast Transparent Optical Lens Housing",
-      "thumbnail": "",
+      "id": "id_1780262495478_eaazjd",
+      "name": "Precision-Injection-Mold",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\06_Metal_Precision-Injection-Mold.png",
       "thumbnailVideo": "",
-      "shortDesc": "Crystal-clear polyurethane optical housing produced via silicone mold vacuum casting with optical-grade transparency.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Transparent optical sensor housing prototype produced through vacuum casting using optically clear polyurethane resin. The silicone mold process faithfully reproduces the fine surface details of the master pattern while achieving near-optical transparency (92% light transmission). Ideal for functional testing of optical sensor assemblies before committing to injection mold tooling.\n\nAdvantages:\n• 92% light transmission comparable to injection-molded polycarbonate\n• Silicone mold captures surface texture down to 0.5μm\n• Up to 25 parts per silicone mold\n• Fraction of injection mold tooling cost\n• Compatible with overmolding for gasket seals",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Optically Clear Polyurethane (PX 5210 HT)"},
-          {"name": "Process", "value": "Silicone Mold Vacuum Casting"},
-          {"name": "Dimensions", "value": "85mm × 45mm × 30mm"},
-          {"name": "Transparency", "value": "92% light transmission (400-700nm)"},
-          {"name": "Mold Life", "value": "15-25 castings per silicone mold"},
-          {"name": "Lead Time", "value": "3-5 working days (master + first articles)"},
-          {"name": "Application", "value": "LiDAR / optical sensor enclosure"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-007",
-      "name": "Stainless Steel Microfluidic Manifold",
-      "thumbnail": "",
+      "id": "id_1780262500488_jsgaa0",
+      "name": "Plastic_ABS-Consumer-Electronics-Housing",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\07_Plastic_ABS-Consumer-Electronics-Housing.png",
       "thumbnailVideo": "",
-      "shortDesc": "316L stainless steel microfluidic distribution manifold with 0.3mm internal channels machined by micro-CNC.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Precision microfluidic manifold machined from 316L stainless steel featuring internal channels as narrow as 0.3mm for precise fluid distribution in analytical instrumentation. The manifold integrates 8 inlet ports and 16 outlet channels with a compact 40mm × 30mm footprint. Each channel is individually pressure-tested to 50 bar.\n\nMicro-machining capabilities:\n• Channel widths down to 0.2mm (0.008 inch)\n• Aspect ratios up to 5:1 (depth:width)\n• Burr-free internal intersection geometries\n• Electropolished internal surfaces for reduced flow resistance\n• 100% helium leak testing to 1×10⁻⁹ mbar·L/s",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "316L Stainless Steel (Electropolished)"},
-          {"name": "Process", "value": "Micro-CNC Machining + Electropolishing"},
-          {"name": "Dimensions", "value": "40mm × 30mm × 12mm"},
-          {"name": "Min Channel Width", "value": "0.3mm"},
-          {"name": "Channel Aspect Ratio", "value": "Up to 5:1"},
-          {"name": "Leak Test", "value": "Helium leak test to 1×10⁻⁹ mbar·L/s"},
-          {"name": "Lead Time", "value": "5-8 working days"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-008",
-      "name": "SLA Printed Architectural Scale Model",
-      "thumbnail": "",
+      "id": "id_1780262503770_qieik2",
+      "name": "Plastic_PMMA-Optical-Lens-Array",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\08_Plastic_PMMA-Optical-Lens-Array.png",
       "thumbnailVideo": "",
-      "shortDesc": "Highly detailed 1:200 scale architectural model with intricate facade features printed in high-resolution SLA resin.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Exhibition-quality architectural scale model at 1:200 scale, showcasing a 40-story mixed-use tower design. Printed in high-resolution SLA resin with 25μm layer thickness to faithfully reproduce intricate facade elements, balcony details, and rooftop mechanical equipment. The model is assembled from 12 interlocking sections with integrated LED illumination channels.\n\nModel features:\n• 25μm layer resolution for ultra-fine surface detail\n• Sectional design for transport and assembly\n• Integrated channels for LED lighting installation\n• Base plate with landscape and site context elements\n• Paintable surface accepts acrylic and enamel finishes",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "High-Detail SLA Resin (Grey/White)"},
-          {"name": "Process", "value": "SLA 3D Printing + Post-Curing + Assembly"},
-          {"name": "Scale", "value": "1:200"},
-          {"name": "Model Size", "value": "600mm × 400mm × 350mm (assembled)"},
-          {"name": "Layer Resolution", "value": "25μm"},
-          {"name": "Sections", "value": "12 interlocking modules"},
-          {"name": "Lead Time", "value": "8-12 working days"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-009",
-      "name": "Titanium Bicycle Dropout with Lattice Optimization",
-      "thumbnail": "",
+      "id": "id_1780262511952_i474kg",
+      "name": "Plastic_Nylon-PA66-Functional-Structural-Part",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\09_Plastic_Nylon-PA66-Functional-Structural-Part.png",
       "thumbnailVideo": "",
-      "shortDesc": "Generative-designed titanium bicycle rear dropout achieving 42% weight reduction while maintaining structural integrity.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Topologically optimized bicycle rear dropout manufactured in Ti-6Al-4V through a combination of SLM additive manufacturing and CNC post-machining. The part was designed using generative engineering software (nTopology) to minimize mass while meeting yield strength requirements under multi-axial loading conditions. The organic lattice structure achieves a 42% weight reduction versus the original solid design.\n\nDesign-to-manufacturing workflow:\n• Load case definition from ISO 4210 bicycle safety standard\n• Generative design optimization in nTopology & Fusion 360\n• SLM printing with optimized build orientation for minimal supports\n• CNC machining of bearing bores and axle interface surfaces\n• Hot isostatic pressing (HIP) for fatigue life enhancement",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Titanium Ti-6Al-4V (Grade 23 ELI)"},
-          {"name": "Process", "value": "SLM + CNC Post-Machining + HIP Treatment"},
-          {"name": "Dimensions", "value": "85mm × 65mm × 28mm"},
-          {"name": "Weight Reduction", "value": "42% vs. solid design"},
-          {"name": "Density", "value": ">99.97% (post-HIP)"},
-          {"name": "Tensile Strength", "value": ">950 MPa"},
-          {"name": "Lead Time", "value": "5-7 working days"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-010",
-      "name": "Copper Heat Sink with Vapor Chamber",
-      "thumbnail": "",
+      "id": "id_1780262514836_0p43ui",
+      "name": "Metal-Plastic_Hybrid_Power-Tool-Body",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\10_Metal-Plastic_Hybrid_Power-Tool-Body.png",
       "thumbnailVideo": "",
-      "shortDesc": "High-performance copper heat sink with integrated vapor chamber for 500W+ thermal management applications.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Advanced thermal management solution combining a CNC machined copper fin array with an integrated vapor chamber base for electronics cooling applications exceeding 500W. The vapor chamber uses a sintered copper wick structure and deionized water working fluid to achieve effective thermal conductivity exceeding 5,000 W/m·K — over 12× that of solid copper.\n\nThermal performance:\n• Effective thermal conductivity: >5,000 W/m·K\n• Thermal resistance: <0.05 K/W at 500W\n• Operating temperature range: -10°C to 120°C\n• Fin geometry optimized for 120mm PWM fan\n• Customizable mounting pattern for any processor socket",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "C11000 Copper (Fins + Chamber Body)"},
-          {"name": "Process", "value": "CNC Machining + Vacuum Brazing + Fluid Charging"},
-          {"name": "Dimensions", "value": "120mm × 120mm × 45mm"},
-          {"name": "Thermal Capacity", "value": "500W+ continuous"},
-          {"name": "Effective Conductivity", "value": ">5,000 W/m·K"},
-          {"name": "Fin Density", "value": "22 FPI (fins per inch)"},
-          {"name": "Lead Time", "value": "10-15 working days"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-011",
-      "name": "PEEK Sealing Gland for Chemical Processing",
-      "thumbnail": "",
+      "id": "id_1780262519812_qnsz43",
+      "name": "Plastic_Hybrid_Smart-Wearable-Enclosure",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\11_Metal-Plastic_Hybrid_Smart-Wearable-Enclosure.png",
       "thumbnailVideo": "",
-      "shortDesc": "CNC machined PEEK sealing gland for aggressive chemical environments with multi-lip seal geometry.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Custom sealing gland machined from unfilled PEEK (Polyetheretherketone) for use in chemical processing equipment handling concentrated acids at elevated temperatures. The design incorporates a triple-lip labyrinth seal geometry that progressively reduces pressure while maintaining chemical compatibility with aggressive media including 98% sulfuric acid and 35% hydrochloric acid at temperatures up to 180°C.\n\nMaterial advantages:\n• Continuous service temperature: 250°C\n• Excellent chemical resistance to acids, bases, and solvents\n• Self-lubricating for reduced seal wear\n• USP Class VI biocompatible (medical-grade option available)\n• Zero moisture absorption ensures dimensional stability",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Unfilled PEEK (Polyetheretherketone)"},
-          {"name": "Process", "value": "CNC Machining + Ultrasonic Cleaning"},
-          {"name": "Dimensions", "value": "Ø 65mm × 40mm"},
-          {"name": "Temperature Range", "value": "-50°C to +250°C continuous"},
-          {"name": "Chemical Compatibility", "value": "98% H₂SO₄, 35% HCl, most solvents"},
-          {"name": "Surface Finish", "value": "Ra 0.8μm (sealing surfaces)"},
-          {"name": "Lead Time", "value": "3-4 working days"}
-        ]
+        "specs": []
       }
     },
     {
-      "id": "prod-012",
-      "name": "AlSi10Mg Satellite Bracket Assembly",
-      "thumbnail": "",
+      "id": "id_1780262524210_09nwkd",
+      "name": "Plastic_Hybrid_Automotive-Interior-Console",
+      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\12_Metal-Plastic_Hybrid_Automotive-Interior-Console.png",
       "thumbnailVideo": "",
-      "shortDesc": "Topology-optimized satellite component bracket in AlSi10Mg achieving 55% mass reduction for space applications.",
+      "shortDesc": "Brief description (max 20 words).",
       "details": {
-        "description": "Lightweight satellite antenna bracket designed for a low-earth-orbit (LEO) communication satellite constellation. The part was topology-optimized to meet launch vibration requirements (12g RMS random vibration) while minimizing mass. Produced in AlSi10Mg aluminum alloy via SLM with post-process CNC machining of critical mounting interfaces.\n\nSpace-grade manufacturing:\n• Material traceability with full mill certification\n• Vibration testing per GEVS (GSFC-STD-7000)\n• Thermal cycling validation: -40°C to +85°C, 100 cycles\n• Outgassing compliant per ASTM E595 (<1.0% TML, <0.1% CVCM)\n• Cleanroom assembly and packaging (ISO Class 7)",
+        "description": "Detailed description with text, formatting, line breaks.",
         "images": [],
         "videos": [],
-        "specs": [
-          {"name": "Material", "value": "AlSi10Mg Aluminum Alloy (Space-Qualified)"},
-          {"name": "Process", "value": "SLM + CNC Post-Machining + Stress Relief"},
-          {"name": "Dimensions", "value": "180mm × 120mm × 95mm"},
-          {"name": "Weight Reduction", "value": "55% vs. conventionally machined"},
-          {"name": "Stiffness", "value": ">300 Hz first natural frequency"},
-          {"name": "Outgassing", "value": "ASTM E595 compliant"},
-          {"name": "Lead Time", "value": "12-18 working days"}
-        ]
-      }
-    },
-    {
-      "id": "prod-013",
-      "name": "Multi-Material Overmolded Electronics Enclosure",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "IP67-rated electronics enclosure with rigid PC shell and TPE overmolded gasket in a single manufacturing cycle.",
-      "details": {
-        "description": "Waterproof electronics enclosure demonstrating multi-material overmolding capability. The rigid structural shell is CNC machined from polycarbonate, then transferred to a custom silicone mold where a thermoplastic elastomer (TPE) gasket is overmolded directly onto the mating surface. The result is a single-part solution that achieves IP67 water ingress protection without separate gasket assembly.\n\nDesign integration:\n• Rigid PC body provides structural integrity and EMI shielding compatibility\n• TPE gasket chemically bonds to PC substrate (no adhesive required)\n• IP67 tested: 1m submersion for 30 minutes, no ingress\n• Integrated strain relief channels for cable management\n• Suitable for outdoor IoT, marine, and industrial sensor applications",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Materials", "value": "Polycarbonate (Rigid Shell) + TPE (Gasket)"},
-          {"name": "Process", "value": "CNC Machining + Silicone Mold Overmolding"},
-          {"name": "Dimensions", "value": "150mm × 95mm × 42mm"},
-          {"name": "Protection Rating", "value": "IP67 (tested and certified)"},
-          {"name": "Operating Temperature", "value": "-30°C to +80°C"},
-          {"name": "Overmold Bond", "value": "Chemical adhesion, peel strength >8 N/mm"},
-          {"name": "Lead Time", "value": "5-8 working days (master + first articles)"}
-        ]
-      }
-    },
-    {
-      "id": "prod-014",
-      "name": "Inconel 718 Gas Turbine Nozzle Guide Vane",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "Investment cast and CNC-finished Inconel 718 nozzle guide vane for 1000°C+ turbine inlet conditions.",
-      "details": {
-        "description": "Prototype gas turbine nozzle guide vane (NGV) manufactured through a hybrid process combining investment casting for near-net-shape production with 5-axis CNC machining for aerodynamic profile finishing. Cast in Inconel 718 nickel superalloy, the vane features internal cooling passages verified by X-ray CT scanning prior to delivery.\n\nHigh-temperature capability:\n• Service temperature: up to 1000°C continuous\n• Single-crystal-like grain structure through controlled solidification\n• Film cooling holes (Ø 0.6mm) produced by EDM drilling\n• Thermal barrier coating (TBC) compatible surface finish\n• Full NDT: X-ray, fluorescent penetrant inspection (FPI), and dimensional CMM report",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Inconel 718 (AMS 5662)"},
-          {"name": "Process", "value": "Investment Casting + 5-Axis CNC + EDM Drilling"},
-          {"name": "Dimensions", "value": "85mm chord × 120mm span × 45mm pitch"},
-          {"name": "Max Service Temp", "value": "1000°C"},
-          {"name": "Cooling Holes", "value": "38 holes at Ø 0.6mm ±0.02mm"},
-          {"name": "Inspection", "value": "X-Ray CT + FPI + CMM Full Report"},
-          {"name": "Lead Time", "value": "15-20 working days"}
-        ]
-      }
-    },
-    {
-      "id": "prod-015",
-      "name": "SLA Printed Investment Casting Wax Pattern Set",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "High-precision castable wax pattern set for jewelry-grade investment casting produced on SLA 3D printer.",
-      "details": {
-        "description": "Set of 12 intricate wax patterns for luxury jewelry investment casting, printed in castable resin on a high-resolution SLA system. Each pattern features fine filigree details as small as 0.15mm that would be impossible to produce through traditional wax injection tooling. The resin is formulated to burn out cleanly with zero ash residue (<0.01%), ensuring defect-free metal castings.\n\nCasting compatibility:\n• Zero ash residue (<0.01%) for clean burnout\n• Thermal expansion matched to investment plaster\n• Compatible with gold, silver, platinum, and palladium alloys\n• Tree assembly guidance included for optimal sprue placement\n• Validated on standard jewelry casting cycle (730°C flask temperature)",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Material", "value": "Castable SLA Resin (Ash-Free)"},
-          {"name": "Process", "value": "High-Resolution SLA 3D Printing"},
-          {"name": "Quantity", "value": "12 unique patterns + 2 spares per design"},
-          {"name": "Min Feature Size", "value": "0.15mm (filigree details)"},
-          {"name": "Ash Residue", "value": "<0.01% after burnout"},
-          {"name": "Layer Resolution", "value": "25μm"},
-          {"name": "Lead Time", "value": "2-3 working days"}
-        ]
-      }
-    },
-    {
-      "id": "prod-016",
-      "name": "Robotic End-Effector with Integrated Pneumatics",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "Custom robotic gripper with internal pneumatic channels eliminating external tubing, CNC machined from aluminum.",
-      "details": {
-        "description": "Custom-designed robotic end-effector for a collaborative robot (cobot) pick-and-place application. The gripper body is CNC machined from 7075-T6 aluminum with internal pneumatic channels that eliminate the need for external tubing — a critical requirement for cleanroom and food-handling environments. The design integrates a quick-change mounting interface compatible with ISO 9409-1 standard robot flanges.\n\nDesign features:\n• Internal air channels (Ø 3mm) for clean external profile\n• ISO 9409-1 compatible quick-change mount\n• Integrated vacuum generator with venturi nozzle pockets\n• Hard-anodized surface for wear resistance\n• Weight-optimized to maximize cobot payload utilization\n• Compatible with Universal Robots, Fanuc CRX, and ABB GoFa cobots",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Material", "value": "7075-T6 Aluminum (Hard Anodized)"},
-          {"name": "Process", "value": "CNC Machining + Hard Anodizing + Assembly"},
-          {"name": "Dimensions", "value": "140mm × 95mm × 55mm"},
-          {"name": "Grip Force", "value": "80N at 6 bar supply pressure"},
-          {"name": "Weight", "value": "0.85kg (complete assembly)"},
-          {"name": "Interface", "value": "ISO 9409-1-50-4-M6 flange"},
-          {"name": "Lead Time", "value": "7-10 working days"}
-        ]
-      }
-    },
-    {
-      "id": "prod-017",
-      "name": "Nylon SLS Functional Automotive Air Duct",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "PA12 nylon under-hood air intake duct with living hinges SLS printed for functional engine testing.",
-      "details": {
-        "description": "Functional prototype of an under-hood air intake duct for a performance vehicle application. SLS printed in PA12 (Nylon 12) with integrated living hinges for installation flexibility and snap-fit mounting features. The part was tested on-vehicle for 500km of combined driving including track conditions, demonstrating heat resistance up to 165°C and vibration durability.\n\nFunctional testing results:\n• 500km on-vehicle durability testing completed\n• Heat deflection temperature: 175°C (HDT at 0.45 MPa)\n• Integrated living hinge: >10,000 flex cycles without failure\n• Snap-fit features survived 50+ installation/removal cycles\n• Compatible with silicone couplers and standard hose clamps",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Material", "value": "PA12 Nylon (DuraForm PA or equivalent)"},
-          {"name": "Process", "value": "SLS (Selective Laser Sintering)"},
-          {"name": "Dimensions", "value": "280mm × 160mm × 120mm"},
-          {"name": "Heat Deflection", "value": "175°C at 0.45 MPa (ASTM D648)"},
-          {"name": "Wall Thickness", "value": "2mm nominal, locally reinforced"},
-          {"name": "Tensile Strength", "value": "48 MPa (XY orientation)"},
-          {"name": "Lead Time", "value": "3-5 working days"}
-        ]
-      }
-    },
-    {
-      "id": "prod-018",
-      "name": "Precision Optical Mirror Mount with Flexures",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "Monolithic flexure-based optical mirror mount with sub-arcsecond angular resolution CNC machined from aluminum.",
-      "details": {
-        "description": "Monolithic optical mirror mount designed for a satellite-based laser communication terminal. The mount uses flexure-based kinematic adjustment rather than traditional bearing mechanisms, eliminating backlash, stiction, and particulate generation — critical for space optical applications. Machined from a single block of 6061-T6 aluminum with wire EDM-cut flexure hinges for nanometric motion resolution.\n\nPrecision characteristics:\n• Sub-arcsecond angular adjustment resolution\n• Zero backlash monolithic flexure design\n• Vacuum-compatible (no lubricants required)\n• Athermalized design compensates for temperature changes\n• Compatible with Ø 25mm to Ø 50mm optics\n• Black anodized with laser-engraved alignment fiducials",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Material", "value": "6061-T6 Aluminum (Stress-Relieved)"},
-          {"name": "Process", "value": "CNC Machining + Wire EDM Flexures + Anodizing"},
-          {"name": "Dimensions", "value": "80mm × 70mm × 40mm"},
-          {"name": "Angular Resolution", "value": "<0.5 arcseconds"},
-          {"name": "Adjustment Range", "value": "±3° (tip/tilt axes)"},
-          {"name": "Flexure Hinge Width", "value": "0.15mm (wire EDM)"},
-          {"name": "Lead Time", "value": "10-15 working days"}
-        ]
-      }
-    },
-    {
-      "id": "prod-019",
-      "name": "Glass-Filled Nylon Drone Propeller Set",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "Aerodynamically optimized FPV drone propellers in glass-filled nylon, SLS printed and dynamically balanced.",
-      "details": {
-        "description": "Set of 4 high-performance FPV drone propellers (2 CW + 2 CCW) with aerodynamically optimized blade profiles designed through iterative CFD simulation. SLS printed in glass-filled nylon (PA12-GF) for enhanced stiffness at high RPM. Each propeller is dynamically balanced to <5mg·mm and individually serialized with a QC report.\n\nPerformance specifications:\n• Optimized for 2207-2450KV brushless motors on 6S LiPo\n• Maximum thrust: 1,850g per propeller (static, sea level)\n• Blade design validated through CFD + physical thrust stand testing\n• 30% stiffer than unfilled nylon at equivalent weight\n• Glass-filled nylon withstands 190°C motor bell temperatures\n• Dynamically balanced to <5mg·mm residual unbalance",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Material", "value": "PA12-GF (Glass-Filled Nylon 12)"},
-          {"name": "Process", "value": "SLS Printing + Dynamic Balancing"},
-          {"name": "Diameter", "value": "5.1 inch (129.5mm) pitch"},
-          {"name": "Pitch", "value": "4.3 inch (109.2mm) geometric pitch"},
-          {"name": "Max Thrust", "value": "1,850g per propeller (static)"},
-          {"name": "Balance Standard", "value": "<5mg·mm residual unbalance"},
-          {"name": "Lead Time", "value": "2-3 working days"}
-        ]
-      }
-    },
-    {
-      "id": "prod-020",
-      "name": "Sheet Metal IoT Sensor Enclosure Assembly",
-      "thumbnail": "",
-      "thumbnailVideo": "",
-      "shortDesc": "Precision laser-cut and bent stainless steel IoT sensor housing with welded seams and powder coat finish.",
-      "details": {
-        "description": "Complete IoT environmental sensor enclosure fabricated from 304 stainless steel sheet metal with precision laser cutting, CNC press braking, and TIG-welded corner seams. The enclosure features weatherproof cable glands, a hinged access door with quarter-turn latch, and internal DIN rail mounting provisions. Designed to IP65 standards for outdoor installation in industrial and agricultural monitoring applications.\n\nFabrication highlights:\n• Fiber laser cutting with ±0.05mm feature accuracy\n• CNC press brake forming with angle tolerance ±0.5°\n• TIG welded seams ground flush for clean appearance\n• Stainless steel hinge welded in-place for durability\n• Powder coated in RAL 7035 light grey semi-gloss\n• All hardware included (316 stainless steel fasteners)",
-        "images": [],
-        "videos": [],
-        "specs": [
-          {"name": "Material", "value": "304 Stainless Steel (1.5mm sheet)"},
-          {"name": "Process", "value": "Laser Cutting + CNC Bending + TIG Welding + Powder Coat"},
-          {"name": "Dimensions", "value": "200mm × 150mm × 100mm"},
-          {"name": "Protection Rating", "value": "IP65 (dust-tight + water jet resistant)"},
-          {"name": "Surface", "value": "RAL 7035 powder coat, semi-gloss"},
-          {"name": "Mounting", "value": "Internal DIN rail + external wall-mount brackets"},
-          {"name": "Lead Time", "value": "5-8 working days"}
-        ]
+        "specs": []
       }
     }
   ]
