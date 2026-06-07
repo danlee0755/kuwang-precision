@@ -52,7 +52,7 @@
     setTimeout(function(){ t.classList.remove('show'); }, 2500);
   }
 
-  function generateId() { return 'id_' + Date.now() + '_' + Math.random().toString(36).substr(2,6); }
+  function generateId() { return 'prod-' + String(Date.now()).slice(-6) + '-' + Math.random().toString(36).substr(2,4); }
 
   // ── Data ───────────────────────────────────
   async function loadConfig() {
@@ -174,142 +174,264 @@
   // ── Products Panel ─────────────────────────
   function renderProductsPanel(container) {
     var products = config.products || [];
-    container.appendChild(h('div', {className: 'admin-panel active'}, [
-      h('h2', {}, '📦 Products (' + products.length + ' of 20)'),
-      h('p', {style: {fontSize:'0.85rem', color:'var(--text-muted)', marginBottom:'20px'}},
-        'Manage your 20 rapid prototyping showcase products. Click each product to expand and edit all details including text, images, specification tables, and videos.'),
-      h('div', {id: 'products-list'}, products.map(function(item, i) { return renderProductCard(item, i, products, container); })),
-      products.length < 20 ? h('button', {className: 'add-new-btn', style: {marginTop:'12px'}, onclick: function(){
+    var panel = h('div', {className: 'admin-panel active'});
+
+    // Header
+    panel.appendChild(h('div', {style: {display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'20px'}}, [
+      h('div', {}, [
+        h('h2', {style: {margin:0, padding:0, border:'none'}}, '📦 产品管理'),
+        h('p', {style: {fontSize:'0.82rem', color:'var(--text-muted)', marginTop:'4px'}},
+          '共 ' + products.length + ' 个产品 — 点击编号展开编辑')
+      ]),
+      h('button', {className: 'add-new-btn', onclick: function(){
         products.push({
-          id: generateId(), name:'New Product '+(products.length+1), thumbnail:'', thumbnailVideo:'',
-          shortDesc:'Brief description (max 20 words).',
-          details: { description:'Detailed description with text, formatting, line breaks.', images:[], videos:[], specs:[] }
+          id: generateId(), name: '新产品 ' + (products.length+1), thumbnail: '', thumbnailVideo: '',
+          shortDesc: '简短描述（≤20字）',
+          details: { description: '详细描述', images: [], videos: [], specs: [] }
         });
         saveConfig(); renderProductsPanel(container);
-      }}, '+ Add Product (' + products.length + '/20)') : null
+      }}, '＋ 添加产品')
     ]));
+
+    // Product list - clean table style
+    if (products.length === 0) {
+      panel.appendChild(h('p', {style: {color:'var(--text-muted)', padding:'40px', textAlign:'center'}},
+        '暂无产品，点击上方按钮添加'));
+    } else {
+      var list = h('div', {});
+      products.forEach(function(item, i) {
+        list.appendChild(renderProductCard(item, i, products, container));
+      });
+      panel.appendChild(list);
+    }
+
+    container.appendChild(panel);
   }
 
   function renderProductCard(item, index, products, panelContainer) {
     var isExp = expandedItems[item.id] === true;
-    var card = h('div', {className: 'card-section'});
+    var d = item.details || {};
+    if (!item.details) item.details = { description:'', images:[], videos:[], specs:[] };
 
-    // Header
-    var header = h('div', {style: {display:'flex', alignItems:'center', justifyContent:'space-between', cursor:'pointer'},
+    var card = h('div', {
+      className: 'card-section',
+      style: {padding: '0', overflow: 'hidden', border: isExp ? '1px solid var(--accent)' : '1px solid var(--border)'}
+    });
+
+    // === Collapsed header bar ===
+    var bar = h('div', {
+      style: {
+        display:'flex', alignItems:'center', padding:'12px 16px', cursor:'pointer',
+        background: isExp ? 'var(--bg-elevated)' : 'var(--bg-card)',
+        transition: 'background 0.2s'
+      },
       onclick: function(){
-        expandedItems[item.id] = !isExp; renderProductsPanel(panelContainer);
+        expandedItems[item.id] = !expandedItems[item.id];
+        renderProductsPanel(panelContainer);
       }
-    }, [
-      h('div', {style: {display:'flex', alignItems:'center', gap:'10px'}}, [
-        h('span', {}, isExp ? '▼' : '▶'),
-        h('strong', {style: {color:'var(--text-primary)'}}, 'Product #'+(index+1)+': ' + (item.name||'Unnamed')),
-        h('span', {style: {fontSize:'0.75rem', color:'var(--text-muted)'}}, '(ID: '+item.id.substring(0,8)+'...)')
-      ]),
-      h('div', {style: {display:'flex', gap:'6px'}}, [
-        index > 0 ? h('button', {className: 'btn-icon', title: 'Move Up', onclick: function(e){ e.stopPropagation();
-          var t=products[index]; products[index]=products[index-1]; products[index-1]=t; saveConfig(); renderProductsPanel(panelContainer); }, innerHTML: '⬆️'}) : null,
-        index < products.length-1 ? h('button', {className: 'btn-icon', title: 'Move Down', onclick: function(e){ e.stopPropagation();
-          var t=products[index]; products[index]=products[index+1]; products[index+1]=t; saveConfig(); renderProductsPanel(panelContainer); }, innerHTML: '⬇️'}) : null,
-        h('button', {className: 'btn-icon danger', title: 'Delete', onclick: function(e){ e.stopPropagation();
-          if (confirm('Delete product "'+item.name+'"?')) { products.splice(index,1); saveConfig(); renderProductsPanel(panelContainer); }}, innerHTML: '🗑️'})
-      ])
-    ]);
-    card.appendChild(header);
+    });
 
+    // Number badge
+    var numBadge = h('div', {
+      style: {
+        minWidth:'36px', height:'36px', borderRadius:'8px',
+        background: isExp ? 'var(--accent)' : 'var(--bg-dark)',
+        color: isExp ? '#fff' : 'var(--text-muted)',
+        display:'flex', alignItems:'center', justifyContent:'center',
+        fontWeight:'700', fontSize:'0.9rem', marginRight:'12px',
+        border: '2px solid ' + (isExp ? 'var(--accent)' : 'var(--border)')
+      }
+    }, String(index+1));
+    bar.appendChild(numBadge);
+
+    // Thumbnail preview
+    if (item.thumbnail) {
+      bar.appendChild(h('img', {
+        src: item.thumbnail, alt: '',
+        style: {width:'48px', height:'36px', borderRadius:'4px', objectFit:'cover', marginRight:'10px', background:'var(--bg-dark)'}
+      }));
+    }
+
+    // Name
+    var infoDiv = h('div', {style: {flex:'1', minWidth:'0'}});
+    infoDiv.appendChild(h('div', {style: {fontWeight:'600', color:'var(--text-primary)', fontSize:'0.88rem',
+      overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap'}},
+      (item.name || '未命名产品')));
+    infoDiv.appendChild(h('div', {style: {fontSize:'0.72rem', color:'var(--text-muted)', marginTop:'2px'}},
+      'ID: ' + item.id + ' | 图:' + (item.thumbnail ? '✓' : '✗') + ' | 描述:' + (item.shortDesc ? '✓' : '✗')));
+    bar.appendChild(infoDiv);
+
+    // Expand icon
+    bar.appendChild(h('span', {style: {color:'var(--text-muted)', marginLeft:'8px'}}, isExp ? '▲' : '▼'));
+
+    // Action buttons
+    var actionsDiv = h('div', {style: {display:'flex', gap:'4px', marginLeft:'6px'}});
+    // Move up
+    if (index > 0) {
+      actionsDiv.appendChild(h('button', {
+        className: 'btn-icon', title: '上移',
+        style: {width:'28px', height:'28px', fontSize:'0.7rem'},
+        onclick: function(e){ e.stopPropagation();
+          var t=products[index]; products[index]=products[index-1]; products[index-1]=t;
+          saveConfig(); renderProductsPanel(panelContainer); },
+        innerHTML: '↑'
+      }));
+    }
+    // Move down
+    if (index < products.length-1) {
+      actionsDiv.appendChild(h('button', {
+        className: 'btn-icon', title: '下移',
+        style: {width:'28px', height:'28px', fontSize:'0.7rem'},
+        onclick: function(e){ e.stopPropagation();
+          var t=products[index]; products[index]=products[index+1]; products[index+1]=t;
+          saveConfig(); renderProductsPanel(panelContainer); },
+        innerHTML: '↓'
+      }));
+    }
+    // Delete
+    var delBtn = h('button', {
+      className: 'btn-icon danger', title: '删除',
+      style: {width:'28px', height:'28px', fontSize:'0.7rem'},
+      innerHTML: '✕'
+    });
+    var delClicked = false;
+    delBtn.onclick = function(e) {
+      e.stopPropagation();
+      if (!delClicked) {
+        delBtn.innerHTML = '‼';
+        delBtn.style.background = 'var(--danger)';
+        delBtn.style.color = '#fff';
+        delClicked = true;
+        setTimeout(function(){ delClicked = false; delBtn.innerHTML = '✕'; delBtn.style.background = ''; delBtn.style.color = ''; }, 2500);
+      } else {
+        if (confirm('确认删除产品 #' + (index+1) + '：「' + item.name + '」？')) {
+          products.splice(index, 1);
+          saveConfig();
+          renderProductsPanel(panelContainer);
+          toast('已删除产品 #' + (index+1));
+        }
+      }
+    };
+    actionsDiv.appendChild(delBtn);
+    bar.appendChild(actionsDiv);
+
+    card.appendChild(bar);
+
+    // === Expanded edit form ===
     if (isExp) {
-      var form = h('div', {style: {marginTop:'16px'}});
+      var form = h('div', {style: {padding:'20px', background:'var(--bg-dark)', borderTop:'1px solid var(--border)'}});
 
-      // Basic info
+      // -- Basic Info --
+      form.appendChild(h('h4', {style: {color:'var(--accent-bright)', marginBottom:'12px', fontSize:'0.85rem'}}, '📌 基本信息'));
+
       form.appendChild(h('div', {className: 'form-row'}, [
         h('div', {className: 'form-group'}, [
-          h('label', {}, 'Product Name'),
-          h('input', {type:'text', value: item.name, oninput: function(e){ item.name=e.target.value; saveConfig(); }})
+          h('label', {}, '产品名称'),
+          h('input', {type:'text', value: item.name, placeholder: '输入产品名称',
+            oninput: function(e){ item.name=e.target.value; saveConfig(); }})
         ]),
         h('div', {className: 'form-group'}, [
-          h('label', {}, 'Thumbnail Image URL'),
-          h('input', {type:'text', value: item.thumbnail||'', placeholder: 'images/product-01.jpg',
+          h('label', {}, '缩略图路径'),
+          h('input', {type:'text', value: item.thumbnail||'', placeholder: 'images/601/01_xxx.png',
             oninput: function(e){ item.thumbnail=e.target.value; saveConfig(); }})
         ])
       ]));
-      form.appendChild(h('div', {className: 'form-group'}, [
-        h('label', {}, 'Short Description (max 20 words, shown as text link below thumbnail)'),
-        h('textarea', {oninput: function(e){ item.shortDesc=e.target.value; saveConfig(); }}, item.shortDesc||'')
-      ]));
-      form.appendChild(h('div', {className: 'form-group'}, [
-        h('label', {}, 'Thumbnail Video URL (optional — replaces thumbnail image on hover)'),
-        h('input', {type:'text', value: item.thumbnailVideo||'', placeholder: 'videos/product-01-thumb.mp4',
-          oninput: function(e){ item.thumbnailVideo=e.target.value; saveConfig(); }})
-      ]));
-
-      // Details
-      var d = item.details || {};
-      if (!item.details) item.details = { description:'', images:[], videos:[], specs:[] };
-      d = item.details;
-
-      form.appendChild(h('h4', {style: {marginTop:'20px', marginBottom:'12px', color:'var(--accent-bright)', borderTop:'1px solid var(--border)', paddingTop:'16px'}}, '📝 Detailed Information (shown when user clicks the product)'));
 
       form.appendChild(h('div', {className: 'form-group'}, [
-        h('label', {}, 'Full Description (text, line breaks supported)'),
-        h('textarea', {style: {minHeight:'120px'}, oninput: function(e){ d.description=e.target.value; saveConfig(); }}, d.description||'')
+        h('label', {}, '简短描述（主页展示，≤20字）'),
+        h('input', {type:'text', value: item.shortDesc||'', placeholder: '简要描述产品特点',
+          oninput: function(e){ item.shortDesc=e.target.value; saveConfig(); }})
       ]));
 
-      // Specs table
-      form.appendChild(h('div', {className: 'card-section', style: {background:'var(--bg-dark)'}}, [
-        h('h4', {style: {marginBottom:'10px', color:'var(--text-primary)', fontSize:'0.9rem'}}, '📊 Specification Table'),
-        h('div', {id: 'specs-'+item.id},
+      // -- Detail Section --
+      form.appendChild(h('h4', {style: {color:'var(--accent-bright)', marginTop:'20px', marginBottom:'12px',
+        fontSize:'0.85rem', borderTop:'1px solid var(--border)', paddingTop:'16px'}}, '📝 详情信息'));
+
+      form.appendChild(h('div', {className: 'form-group'}, [
+        h('label', {}, '完整描述'),
+        h('textarea', {style: {minHeight:'100px'}, placeholder: '产品详细介绍，支持换行',
+          oninput: function(e){ d.description=e.target.value; saveConfig(); }}, d.description||'')
+      ]));
+
+      // -- Specs --
+      form.appendChild(h('div', {style: {marginBottom:'16px'}}, [
+        h('div', {style: {display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'8px'}}, [
+          h('label', {style: {margin:0}}, '📊 规格参数'),
+          h('button', {className: 'btn btn-sm', style: {background:'var(--bg-elevated)', border:'1px solid var(--border)', color:'var(--text-secondary)', padding:'4px 12px'}, onclick: function(){
+            d.specs.push({name:'', value:''}); saveConfig(); renderProductsPanel(panelContainer);
+          }}, '＋ 添加行')
+        ]),
+        h('div', {},
           (d.specs||[]).map(function(spec, si){
-            return h('div', {className: 'spec-row'}, [
-              h('input', {type:'text', value: spec.name, placeholder: 'Parameter name', style: {flex:'1'},
+            return h('div', {className: 'spec-row', style: {marginBottom:'6px'}}, [
+              h('input', {type:'text', value: spec.name, placeholder: '参数名', style: {flex:'1'},
                 oninput: function(e){ spec.name=e.target.value; saveConfig(); }}),
-              h('input', {type:'text', value: spec.value, placeholder: 'Specification value', style: {flex:'2'},
+              h('input', {type:'text', value: spec.value, placeholder: '参数值', style: {flex:'2'},
                 oninput: function(e){ spec.value=e.target.value; saveConfig(); }}),
-              h('button', {className: 'btn-icon danger', style: {flexShrink:0}, onclick: function(){
+              h('button', {className: 'btn-icon danger', style: {flexShrink:0, width:'24px', height:'24px', fontSize:'0.65rem'}, onclick: function(){
                 d.specs.splice(si,1); saveConfig(); renderProductsPanel(panelContainer);
               }, innerHTML: '✕'})
             ]);
           })
         ),
-        h('button', {className: 'btn btn-sm', style: {marginTop:'8px', background:'var(--bg-elevated)', border:'1px solid var(--border)', color:'var(--text-secondary)'}, onclick: function(){
-          d.specs.push({name:'', value:''}); saveConfig(); renderProductsPanel(panelContainer);
-        }}, '+ Add Specification Row')
+        (d.specs||[]).length === 0 ? h('p', {style: {fontSize:'0.78rem', color:'var(--text-muted)'}}, '暂无规格参数') : null
       ]));
 
-      // Images
-      form.appendChild(h('div', {className: 'card-section', style: {background:'var(--bg-dark)'}}, [
-        h('h4', {style: {marginBottom:'10px', color:'var(--text-primary)', fontSize:'0.9rem'}}, '🖼️ Detail Images'),
+      // -- Images --
+      form.appendChild(h('div', {style: {marginBottom:'16px'}}, [
+        h('div', {style: {display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'8px'}}, [
+          h('label', {style: {margin:0}}, '🖼️ 详情图片'),
+          h('button', {className: 'btn btn-sm', style: {background:'var(--bg-elevated)', border:'1px solid var(--border)', color:'var(--text-secondary)', padding:'4px 12px'}, onclick: function(){
+            if(!d.images) d.images=[]; d.images.push(''); saveConfig(); renderProductsPanel(panelContainer);
+          }}, '＋ 添加图片')
+        ]),
         h('div', {},
           (d.images||[]).map(function(url, i2){
-            return h('div', {className: 'media-url-row'}, [
-              h('input', {type:'text', value: url, placeholder: 'Image URL '+(i2+1),
+            return h('div', {style: {display:'flex', gap:'8px', marginBottom:'6px', alignItems:'center'}}, [
+              h('span', {style: {fontSize:'0.72rem', color:'var(--text-muted)', minWidth:'20px'}}, (i2+1)+'.'),
+              h('input', {type:'text', value: url, placeholder: '图片URL', style: {flex:'1'},
                 oninput: function(e){ d.images[i2]=e.target.value; saveConfig(); }}),
-              h('button', {className: 'btn-icon danger', style: {flexShrink:0}, onclick: function(){
+              url ? h('img', {src: url, alt:'', style: {width:'32px', height:'24px', borderRadius:'3px', objectFit:'cover', background:'var(--bg-dark)'}}) : null,
+              h('button', {className: 'btn-icon danger', style: {width:'24px', height:'24px', fontSize:'0.65rem', flexShrink:0}, onclick: function(){
                 d.images.splice(i2,1); saveConfig(); renderProductsPanel(panelContainer);
               }, innerHTML: '✕'})
             ]);
           })
         ),
-        h('button', {className: 'btn btn-sm', style: {marginTop:'8px', background:'var(--bg-elevated)', border:'1px solid var(--border)', color:'var(--text-secondary)'}, onclick: function(){
-          if(!d.images) d.images=[]; d.images.push(''); saveConfig(); renderProductsPanel(panelContainer);
-        }}, '+ Add Image URL')
+        (d.images||[]).length === 0 ? h('p', {style: {fontSize:'0.78rem', color:'var(--text-muted)'}}, '暂无图片') : null
       ]));
 
-      // Videos
-      form.appendChild(h('div', {className: 'card-section', style: {background:'var(--bg-dark)'}}, [
-        h('h4', {style: {marginBottom:'10px', color:'var(--text-primary)', fontSize:'0.9rem'}}, '🎬 Detail Videos'),
+      // -- Videos --
+      form.appendChild(h('div', {}, [
+        h('div', {style: {display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'8px'}}, [
+          h('label', {style: {margin:0}}, '🎬 详情视频'),
+          h('button', {className: 'btn btn-sm', style: {background:'var(--bg-elevated)', border:'1px solid var(--border)', color:'var(--text-secondary)', padding:'4px 12px'}, onclick: function(){
+            if(!d.videos) d.videos=[]; d.videos.push(''); saveConfig(); renderProductsPanel(panelContainer);
+          }}, '＋ 添加视频')
+        ]),
         h('div', {},
           (d.videos||[]).map(function(url, i2){
-            return h('div', {className: 'media-url-row'}, [
-              h('input', {type:'text', value: url, placeholder: 'Video URL '+(i2+1),
+            return h('div', {style: {display:'flex', gap:'8px', marginBottom:'6px', alignItems:'center'}}, [
+              h('span', {style: {fontSize:'0.72rem', color:'var(--text-muted)', minWidth:'20px'}}, (i2+1)+'.'),
+              h('input', {type:'text', value: url, placeholder: '视频URL', style: {flex:'1'},
                 oninput: function(e){ d.videos[i2]=e.target.value; saveConfig(); }}),
-              h('button', {className: 'btn-icon danger', style: {flexShrink:0}, onclick: function(){
+              h('button', {className: 'btn-icon danger', style: {width:'24px', height:'24px', fontSize:'0.65rem', flexShrink:0}, onclick: function(){
                 d.videos.splice(i2,1); saveConfig(); renderProductsPanel(panelContainer);
               }, innerHTML: '✕'})
             ]);
           })
         ),
-        h('button', {className: 'btn btn-sm', style: {marginTop:'8px', background:'var(--bg-elevated)', border:'1px solid var(--border)', color:'var(--text-secondary)'}, onclick: function(){
-          if(!d.videos) d.videos=[]; d.videos.push(''); saveConfig(); renderProductsPanel(panelContainer);
-        }}, '+ Add Video URL')
+        (d.videos||[]).length === 0 ? h('p', {style: {fontSize:'0.78rem', color:'var(--text-muted)'}}, '暂无视频') : null
+      ]));
+
+      form.appendChild(h('div', {style: {marginTop:'24px', paddingTop:'16px', borderTop:'1px solid var(--border)'}}, [
+        h('button', {className: 'btn btn-primary', style: {marginRight:'8px'}, onclick: function(){
+          expandedItems[item.id] = false;
+          saveConfig();
+          renderProductsPanel(panelContainer);
+          toast('✅ 产品 #' + (index+1) + ' 已保存');
+        }}, '✅ 完成编辑'),
+        h('span', {style: {fontSize:'0.75rem', color:'var(--text-muted)', marginLeft:'8px'}}, '按编号 ' + (index+1) + ' — ID: ' + item.id)
       ]));
 
       card.appendChild(form);
