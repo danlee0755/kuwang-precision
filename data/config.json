@@ -2,14 +2,14 @@
   "company": {
     "name": "Dongguan Kuwang Precision Manufacturing Co., Ltd",
     "intro": "Headquartered in Dongguan — the world-renowned 'World's Factory' and China's premier hub for precision manufacturing — Dongguan Kuwang Precision Manufacturing Co., Ltd is a trusted global partner for rapid prototyping, CNC machining, vacuum casting, sheet metal fabrication, and low-volume production. With over 15 years of industry experience, we serve clients across North America, Europe, Asia, and Oceania, delivering high-precision prototypes and end-use parts with industry-leading speed and quality.\n\nOur state-of-the-art facility houses 50+ advanced CNC machines, 5-axis machining centers, industrial-grade 3D printers (SLA, SLS, SLM, FDM), vacuum casting systems, and a full suite of inspection equipment including CMM and laser scanners. We specialize in producing complex geometries, tight-tolerance components, and functional prototypes from over 60 engineering-grade materials including aluminum alloys, stainless steel, titanium, brass, PEEK, polycarbonate, and carbon-fiber-reinforced composites.\n\nOur ISO 9001:2015 certified quality management system ensures every part meets your exact specifications. Whether you need a single prototype within 24 hours or 10,000 production units, Kuwang delivers precision, reliability, and exceptional value. Partner with us to transform your concepts into reality — faster than ever before.",
-    "contactPerson": "Mr. Li Wei",
-    "phone": "+86-769-8888-6666",
-    "address": "No. 88, Zhen'an Road, Chang'an Town, Dongguan City, Guangdong Province 523850, China",
-    "email": "info@kuwang-precision.com",
+    "contactPerson": "Dan Lee",
+    "phone": "+8618033494367",
+    "address": "619, Zengtian industrial zone, Dongguan City, Guangdong, China",
+    "email": "danlee0755@gmail.com",
     "social": {
-      "whatsapp": "+8613812345678",
+      "whatsapp": "+8618033494367",
       "facebook": "KuwangPrecision",
-      "linkedin": "company/kuwang-precision-manufacturing"
+      "linkedin": "https://www.linkedin.com/in/dan-lee-626542253/"
     }
   },
   "homepage": {
@@ -28,13 +28,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Titanium Alloy Ti-6Al-4V (Grade 5)"},
-          {"name": "Process", "value": "5-Axis CNC Machining + Stress Relief"},
-          {"name": "Dimensions", "value": "Ø 180mm × 65mm"},
-          {"name": "Tolerance", "value": "±0.005mm on critical surfaces"},
-          {"name": "Surface Finish", "value": "Ra 0.4μm (aerodynamic surfaces)"},
-          {"name": "Lead Time", "value": "5-7 working days"},
-          {"name": "Inspection", "value": "CMM Full Geometric Report + Surface Profilometry"}
+          {
+            "name": "Material",
+            "value": "Titanium Alloy Ti-6Al-4V (Grade 5)"
+          },
+          {
+            "name": "Process",
+            "value": "5-Axis CNC Machining + Stress Relief"
+          },
+          {
+            "name": "Dimensions",
+            "value": "Ø 180mm × 65mm"
+          },
+          {
+            "name": "Tolerance",
+            "value": "±0.005mm on critical surfaces"
+          },
+          {
+            "name": "Surface Finish",
+            "value": "Ra 0.4μm (aerodynamic surfaces)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "5-7 working days"
+          },
+          {
+            "name": "Inspection",
+            "value": "CMM Full Geometric Report + Surface Profilometry"
+          }
         ]
       }
     },
@@ -49,13 +70,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Maraging Steel 1.2709 (MS1)"},
-          {"name": "Process", "value": "SLM (Selective Laser Melting) + Heat Treatment"},
-          {"name": "Dimensions", "value": "120mm × 80mm × 45mm"},
-          {"name": "Layer Thickness", "value": "40μm"},
-          {"name": "Hardness", "value": "52-54 HRC (post heat treatment)"},
-          {"name": "Lead Time", "value": "3-5 working days"},
-          {"name": "Application", "value": "High-volume plastic injection molding"}
+          {
+            "name": "Material",
+            "value": "Maraging Steel 1.2709 (MS1)"
+          },
+          {
+            "name": "Process",
+            "value": "SLM (Selective Laser Melting) + Heat Treatment"
+          },
+          {
+            "name": "Dimensions",
+            "value": "120mm × 80mm × 45mm"
+          },
+          {
+            "name": "Layer Thickness",
+            "value": "40μm"
+          },
+          {
+            "name": "Hardness",
+            "value": "52-54 HRC (post heat treatment)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "3-5 working days"
+          },
+          {
+            "name": "Application",
+            "value": "High-volume plastic injection molding"
+          }
         ]
       }
     },
@@ -70,13 +112,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "3K Carbon Fiber Reinforced Epoxy (CFRP)"},
-          {"name": "Process", "value": "CNC Routing + Edge Sealing"},
-          {"name": "Thickness", "value": "2mm / 3mm / 4mm plate options"},
-          {"name": "Tolerance", "value": "±0.05mm"},
-          {"name": "Surface", "value": "Matte finish with edge sealant"},
-          {"name": "Lead Time", "value": "2-3 working days"},
-          {"name": "Quantity", "value": "6 plates + mounting hardware per kit"}
+          {
+            "name": "Material",
+            "value": "3K Carbon Fiber Reinforced Epoxy (CFRP)"
+          },
+          {
+            "name": "Process",
+            "value": "CNC Routing + Edge Sealing"
+          },
+          {
+            "name": "Thickness",
+            "value": "2mm / 3mm / 4mm plate options"
+          },
+          {
+            "name": "Tolerance",
+            "value": "±0.05mm"
+          },
+          {
+            "name": "Surface",
+            "value": "Matte finish with edge sealant"
+          },
+          {
+            "name": "Lead Time",
+            "value": "2-3 working days"
+          },
+          {
+            "name": "Quantity",
+            "value": "6 plates + mounting hardware per kit"
+          }
         ]
       }
     },
@@ -91,13 +154,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Medical-Grade PEEK / Biocompatible Clear Resin"},
-          {"name": "Process", "value": "SLA 3D Printing + CNC Post-Finishing"},
-          {"name": "Dimensions", "value": "Custom per patient anatomy scan"},
-          {"name": "Accuracy", "value": "±0.05mm on mating surfaces"},
-          {"name": "Layer Resolution", "value": "50μm (SLA)"},
-          {"name": "Lead Time", "value": "3-4 working days"},
-          {"name": "Application", "value": "Orthopedic surgical planning & pre-clinical testing"}
+          {
+            "name": "Material",
+            "value": "Medical-Grade PEEK / Biocompatible Clear Resin"
+          },
+          {
+            "name": "Process",
+            "value": "SLA 3D Printing + CNC Post-Finishing"
+          },
+          {
+            "name": "Dimensions",
+            "value": "Custom per patient anatomy scan"
+          },
+          {
+            "name": "Accuracy",
+            "value": "±0.05mm on mating surfaces"
+          },
+          {
+            "name": "Layer Resolution",
+            "value": "50μm (SLA)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "3-4 working days"
+          },
+          {
+            "name": "Application",
+            "value": "Orthopedic surgical planning & pre-clinical testing"
+          }
         ]
       }
     },
@@ -112,13 +196,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "6061-T6 Aluminum Billet"},
-          {"name": "Process", "value": "CNC Machining + Anodizing"},
-          {"name": "Dimensions", "value": "320mm × 180mm × 140mm"},
-          {"name": "Tolerance", "value": "±0.02mm (port matching surfaces)"},
-          {"name": "Surface", "value": "Black anodized (Type II, Class 2)"},
-          {"name": "Lead Time", "value": "7-10 working days"},
-          {"name": "Application", "value": "4-cylinder high-performance engine"}
+          {
+            "name": "Material",
+            "value": "6061-T6 Aluminum Billet"
+          },
+          {
+            "name": "Process",
+            "value": "CNC Machining + Anodizing"
+          },
+          {
+            "name": "Dimensions",
+            "value": "320mm × 180mm × 140mm"
+          },
+          {
+            "name": "Tolerance",
+            "value": "±0.02mm (port matching surfaces)"
+          },
+          {
+            "name": "Surface",
+            "value": "Black anodized (Type II, Class 2)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "7-10 working days"
+          },
+          {
+            "name": "Application",
+            "value": "4-cylinder high-performance engine"
+          }
         ]
       }
     },
@@ -133,13 +238,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Optically Clear Polyurethane (PX 5210 HT)"},
-          {"name": "Process", "value": "Silicone Mold Vacuum Casting"},
-          {"name": "Dimensions", "value": "85mm × 45mm × 30mm"},
-          {"name": "Transparency", "value": "92% light transmission (400-700nm)"},
-          {"name": "Mold Life", "value": "15-25 castings per silicone mold"},
-          {"name": "Lead Time", "value": "3-5 working days (master + first articles)"},
-          {"name": "Application", "value": "LiDAR / optical sensor enclosure"}
+          {
+            "name": "Material",
+            "value": "Optically Clear Polyurethane (PX 5210 HT)"
+          },
+          {
+            "name": "Process",
+            "value": "Silicone Mold Vacuum Casting"
+          },
+          {
+            "name": "Dimensions",
+            "value": "85mm × 45mm × 30mm"
+          },
+          {
+            "name": "Transparency",
+            "value": "92% light transmission (400-700nm)"
+          },
+          {
+            "name": "Mold Life",
+            "value": "15-25 castings per silicone mold"
+          },
+          {
+            "name": "Lead Time",
+            "value": "3-5 working days (master + first articles)"
+          },
+          {
+            "name": "Application",
+            "value": "LiDAR / optical sensor enclosure"
+          }
         ]
       }
     },
@@ -154,13 +280,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "316L Stainless Steel (Electropolished)"},
-          {"name": "Process", "value": "Micro-CNC Machining + Electropolishing"},
-          {"name": "Dimensions", "value": "40mm × 30mm × 12mm"},
-          {"name": "Min Channel Width", "value": "0.3mm"},
-          {"name": "Channel Aspect Ratio", "value": "Up to 5:1"},
-          {"name": "Leak Test", "value": "Helium leak test to 1×10⁻⁹ mbar·L/s"},
-          {"name": "Lead Time", "value": "5-8 working days"}
+          {
+            "name": "Material",
+            "value": "316L Stainless Steel (Electropolished)"
+          },
+          {
+            "name": "Process",
+            "value": "Micro-CNC Machining + Electropolishing"
+          },
+          {
+            "name": "Dimensions",
+            "value": "40mm × 30mm × 12mm"
+          },
+          {
+            "name": "Min Channel Width",
+            "value": "0.3mm"
+          },
+          {
+            "name": "Channel Aspect Ratio",
+            "value": "Up to 5:1"
+          },
+          {
+            "name": "Leak Test",
+            "value": "Helium leak test to 1×10⁻⁹ mbar·L/s"
+          },
+          {
+            "name": "Lead Time",
+            "value": "5-8 working days"
+          }
         ]
       }
     },
@@ -175,13 +322,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "High-Detail SLA Resin (Grey/White)"},
-          {"name": "Process", "value": "SLA 3D Printing + Post-Curing + Assembly"},
-          {"name": "Scale", "value": "1:200"},
-          {"name": "Model Size", "value": "600mm × 400mm × 350mm (assembled)"},
-          {"name": "Layer Resolution", "value": "25μm"},
-          {"name": "Sections", "value": "12 interlocking modules"},
-          {"name": "Lead Time", "value": "8-12 working days"}
+          {
+            "name": "Material",
+            "value": "High-Detail SLA Resin (Grey/White)"
+          },
+          {
+            "name": "Process",
+            "value": "SLA 3D Printing + Post-Curing + Assembly"
+          },
+          {
+            "name": "Scale",
+            "value": "1:200"
+          },
+          {
+            "name": "Model Size",
+            "value": "600mm × 400mm × 350mm (assembled)"
+          },
+          {
+            "name": "Layer Resolution",
+            "value": "25μm"
+          },
+          {
+            "name": "Sections",
+            "value": "12 interlocking modules"
+          },
+          {
+            "name": "Lead Time",
+            "value": "8-12 working days"
+          }
         ]
       }
     },
@@ -196,13 +364,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Titanium Ti-6Al-4V (Grade 23 ELI)"},
-          {"name": "Process", "value": "SLM + CNC Post-Machining + HIP Treatment"},
-          {"name": "Dimensions", "value": "85mm × 65mm × 28mm"},
-          {"name": "Weight Reduction", "value": "42% vs. solid design"},
-          {"name": "Density", "value": ">99.97% (post-HIP)"},
-          {"name": "Tensile Strength", "value": ">950 MPa"},
-          {"name": "Lead Time", "value": "5-7 working days"}
+          {
+            "name": "Material",
+            "value": "Titanium Ti-6Al-4V (Grade 23 ELI)"
+          },
+          {
+            "name": "Process",
+            "value": "SLM + CNC Post-Machining + HIP Treatment"
+          },
+          {
+            "name": "Dimensions",
+            "value": "85mm × 65mm × 28mm"
+          },
+          {
+            "name": "Weight Reduction",
+            "value": "42% vs. solid design"
+          },
+          {
+            "name": "Density",
+            "value": ">99.97% (post-HIP)"
+          },
+          {
+            "name": "Tensile Strength",
+            "value": ">950 MPa"
+          },
+          {
+            "name": "Lead Time",
+            "value": "5-7 working days"
+          }
         ]
       }
     },
@@ -217,13 +406,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "C11000 Copper (Fins + Chamber Body)"},
-          {"name": "Process", "value": "CNC Machining + Vacuum Brazing + Fluid Charging"},
-          {"name": "Dimensions", "value": "120mm × 120mm × 45mm"},
-          {"name": "Thermal Capacity", "value": "500W+ continuous"},
-          {"name": "Effective Conductivity", "value": ">5,000 W/m·K"},
-          {"name": "Fin Density", "value": "22 FPI (fins per inch)"},
-          {"name": "Lead Time", "value": "10-15 working days"}
+          {
+            "name": "Material",
+            "value": "C11000 Copper (Fins + Chamber Body)"
+          },
+          {
+            "name": "Process",
+            "value": "CNC Machining + Vacuum Brazing + Fluid Charging"
+          },
+          {
+            "name": "Dimensions",
+            "value": "120mm × 120mm × 45mm"
+          },
+          {
+            "name": "Thermal Capacity",
+            "value": "500W+ continuous"
+          },
+          {
+            "name": "Effective Conductivity",
+            "value": ">5,000 W/m·K"
+          },
+          {
+            "name": "Fin Density",
+            "value": "22 FPI (fins per inch)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "10-15 working days"
+          }
         ]
       }
     },
@@ -238,13 +448,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Unfilled PEEK (Polyetheretherketone)"},
-          {"name": "Process", "value": "CNC Machining + Ultrasonic Cleaning"},
-          {"name": "Dimensions", "value": "Ø 65mm × 40mm"},
-          {"name": "Temperature Range", "value": "-50°C to +250°C continuous"},
-          {"name": "Chemical Compatibility", "value": "98% H₂SO₄, 35% HCl, most solvents"},
-          {"name": "Surface Finish", "value": "Ra 0.8μm (sealing surfaces)"},
-          {"name": "Lead Time", "value": "3-4 working days"}
+          {
+            "name": "Material",
+            "value": "Unfilled PEEK (Polyetheretherketone)"
+          },
+          {
+            "name": "Process",
+            "value": "CNC Machining + Ultrasonic Cleaning"
+          },
+          {
+            "name": "Dimensions",
+            "value": "Ø 65mm × 40mm"
+          },
+          {
+            "name": "Temperature Range",
+            "value": "-50°C to +250°C continuous"
+          },
+          {
+            "name": "Chemical Compatibility",
+            "value": "98% H₂SO₄, 35% HCl, most solvents"
+          },
+          {
+            "name": "Surface Finish",
+            "value": "Ra 0.8μm (sealing surfaces)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "3-4 working days"
+          }
         ]
       }
     },
@@ -259,13 +490,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "AlSi10Mg Aluminum Alloy (Space-Qualified)"},
-          {"name": "Process", "value": "SLM + CNC Post-Machining + Stress Relief"},
-          {"name": "Dimensions", "value": "180mm × 120mm × 95mm"},
-          {"name": "Weight Reduction", "value": "55% vs. conventionally machined"},
-          {"name": "Stiffness", "value": ">300 Hz first natural frequency"},
-          {"name": "Outgassing", "value": "ASTM E595 compliant"},
-          {"name": "Lead Time", "value": "12-18 working days"}
+          {
+            "name": "Material",
+            "value": "AlSi10Mg Aluminum Alloy (Space-Qualified)"
+          },
+          {
+            "name": "Process",
+            "value": "SLM + CNC Post-Machining + Stress Relief"
+          },
+          {
+            "name": "Dimensions",
+            "value": "180mm × 120mm × 95mm"
+          },
+          {
+            "name": "Weight Reduction",
+            "value": "55% vs. conventionally machined"
+          },
+          {
+            "name": "Stiffness",
+            "value": ">300 Hz first natural frequency"
+          },
+          {
+            "name": "Outgassing",
+            "value": "ASTM E595 compliant"
+          },
+          {
+            "name": "Lead Time",
+            "value": "12-18 working days"
+          }
         ]
       }
     },
@@ -280,13 +532,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Materials", "value": "Polycarbonate (Rigid Shell) + TPE (Gasket)"},
-          {"name": "Process", "value": "CNC Machining + Silicone Mold Overmolding"},
-          {"name": "Dimensions", "value": "150mm × 95mm × 42mm"},
-          {"name": "Protection Rating", "value": "IP67 (tested and certified)"},
-          {"name": "Operating Temperature", "value": "-30°C to +80°C"},
-          {"name": "Overmold Bond", "value": "Chemical adhesion, peel strength >8 N/mm"},
-          {"name": "Lead Time", "value": "5-8 working days (master + first articles)"}
+          {
+            "name": "Materials",
+            "value": "Polycarbonate (Rigid Shell) + TPE (Gasket)"
+          },
+          {
+            "name": "Process",
+            "value": "CNC Machining + Silicone Mold Overmolding"
+          },
+          {
+            "name": "Dimensions",
+            "value": "150mm × 95mm × 42mm"
+          },
+          {
+            "name": "Protection Rating",
+            "value": "IP67 (tested and certified)"
+          },
+          {
+            "name": "Operating Temperature",
+            "value": "-30°C to +80°C"
+          },
+          {
+            "name": "Overmold Bond",
+            "value": "Chemical adhesion, peel strength >8 N/mm"
+          },
+          {
+            "name": "Lead Time",
+            "value": "5-8 working days (master + first articles)"
+          }
         ]
       }
     },
@@ -301,13 +574,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Inconel 718 (AMS 5662)"},
-          {"name": "Process", "value": "Investment Casting + 5-Axis CNC + EDM Drilling"},
-          {"name": "Dimensions", "value": "85mm chord × 120mm span × 45mm pitch"},
-          {"name": "Max Service Temp", "value": "1000°C"},
-          {"name": "Cooling Holes", "value": "38 holes at Ø 0.6mm ±0.02mm"},
-          {"name": "Inspection", "value": "X-Ray CT + FPI + CMM Full Report"},
-          {"name": "Lead Time", "value": "15-20 working days"}
+          {
+            "name": "Material",
+            "value": "Inconel 718 (AMS 5662)"
+          },
+          {
+            "name": "Process",
+            "value": "Investment Casting + 5-Axis CNC + EDM Drilling"
+          },
+          {
+            "name": "Dimensions",
+            "value": "85mm chord × 120mm span × 45mm pitch"
+          },
+          {
+            "name": "Max Service Temp",
+            "value": "1000°C"
+          },
+          {
+            "name": "Cooling Holes",
+            "value": "38 holes at Ø 0.6mm ±0.02mm"
+          },
+          {
+            "name": "Inspection",
+            "value": "X-Ray CT + FPI + CMM Full Report"
+          },
+          {
+            "name": "Lead Time",
+            "value": "15-20 working days"
+          }
         ]
       }
     },
@@ -322,13 +616,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "Castable SLA Resin (Ash-Free)"},
-          {"name": "Process", "value": "High-Resolution SLA 3D Printing"},
-          {"name": "Quantity", "value": "12 unique patterns + 2 spares per design"},
-          {"name": "Min Feature Size", "value": "0.15mm (filigree details)"},
-          {"name": "Ash Residue", "value": "<0.01% after burnout"},
-          {"name": "Layer Resolution", "value": "25μm"},
-          {"name": "Lead Time", "value": "2-3 working days"}
+          {
+            "name": "Material",
+            "value": "Castable SLA Resin (Ash-Free)"
+          },
+          {
+            "name": "Process",
+            "value": "High-Resolution SLA 3D Printing"
+          },
+          {
+            "name": "Quantity",
+            "value": "12 unique patterns + 2 spares per design"
+          },
+          {
+            "name": "Min Feature Size",
+            "value": "0.15mm (filigree details)"
+          },
+          {
+            "name": "Ash Residue",
+            "value": "<0.01% after burnout"
+          },
+          {
+            "name": "Layer Resolution",
+            "value": "25μm"
+          },
+          {
+            "name": "Lead Time",
+            "value": "2-3 working days"
+          }
         ]
       }
     },
@@ -343,13 +658,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "7075-T6 Aluminum (Hard Anodized)"},
-          {"name": "Process", "value": "CNC Machining + Hard Anodizing + Assembly"},
-          {"name": "Dimensions", "value": "140mm × 95mm × 55mm"},
-          {"name": "Grip Force", "value": "80N at 6 bar supply pressure"},
-          {"name": "Weight", "value": "0.85kg (complete assembly)"},
-          {"name": "Interface", "value": "ISO 9409-1-50-4-M6 flange"},
-          {"name": "Lead Time", "value": "7-10 working days"}
+          {
+            "name": "Material",
+            "value": "7075-T6 Aluminum (Hard Anodized)"
+          },
+          {
+            "name": "Process",
+            "value": "CNC Machining + Hard Anodizing + Assembly"
+          },
+          {
+            "name": "Dimensions",
+            "value": "140mm × 95mm × 55mm"
+          },
+          {
+            "name": "Grip Force",
+            "value": "80N at 6 bar supply pressure"
+          },
+          {
+            "name": "Weight",
+            "value": "0.85kg (complete assembly)"
+          },
+          {
+            "name": "Interface",
+            "value": "ISO 9409-1-50-4-M6 flange"
+          },
+          {
+            "name": "Lead Time",
+            "value": "7-10 working days"
+          }
         ]
       }
     },
@@ -364,13 +700,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "PA12 Nylon (DuraForm PA or equivalent)"},
-          {"name": "Process", "value": "SLS (Selective Laser Sintering)"},
-          {"name": "Dimensions", "value": "280mm × 160mm × 120mm"},
-          {"name": "Heat Deflection", "value": "175°C at 0.45 MPa (ASTM D648)"},
-          {"name": "Wall Thickness", "value": "2mm nominal, locally reinforced"},
-          {"name": "Tensile Strength", "value": "48 MPa (XY orientation)"},
-          {"name": "Lead Time", "value": "3-5 working days"}
+          {
+            "name": "Material",
+            "value": "PA12 Nylon (DuraForm PA or equivalent)"
+          },
+          {
+            "name": "Process",
+            "value": "SLS (Selective Laser Sintering)"
+          },
+          {
+            "name": "Dimensions",
+            "value": "280mm × 160mm × 120mm"
+          },
+          {
+            "name": "Heat Deflection",
+            "value": "175°C at 0.45 MPa (ASTM D648)"
+          },
+          {
+            "name": "Wall Thickness",
+            "value": "2mm nominal, locally reinforced"
+          },
+          {
+            "name": "Tensile Strength",
+            "value": "48 MPa (XY orientation)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "3-5 working days"
+          }
         ]
       }
     },
@@ -385,13 +742,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "6061-T6 Aluminum (Stress-Relieved)"},
-          {"name": "Process", "value": "CNC Machining + Wire EDM Flexures + Anodizing"},
-          {"name": "Dimensions", "value": "80mm × 70mm × 40mm"},
-          {"name": "Angular Resolution", "value": "<0.5 arcseconds"},
-          {"name": "Adjustment Range", "value": "±3° (tip/tilt axes)"},
-          {"name": "Flexure Hinge Width", "value": "0.15mm (wire EDM)"},
-          {"name": "Lead Time", "value": "10-15 working days"}
+          {
+            "name": "Material",
+            "value": "6061-T6 Aluminum (Stress-Relieved)"
+          },
+          {
+            "name": "Process",
+            "value": "CNC Machining + Wire EDM Flexures + Anodizing"
+          },
+          {
+            "name": "Dimensions",
+            "value": "80mm × 70mm × 40mm"
+          },
+          {
+            "name": "Angular Resolution",
+            "value": "<0.5 arcseconds"
+          },
+          {
+            "name": "Adjustment Range",
+            "value": "±3° (tip/tilt axes)"
+          },
+          {
+            "name": "Flexure Hinge Width",
+            "value": "0.15mm (wire EDM)"
+          },
+          {
+            "name": "Lead Time",
+            "value": "10-15 working days"
+          }
         ]
       }
     },
@@ -406,13 +784,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "PA12-GF (Glass-Filled Nylon 12)"},
-          {"name": "Process", "value": "SLS Printing + Dynamic Balancing"},
-          {"name": "Diameter", "value": "5.1 inch (129.5mm) pitch"},
-          {"name": "Pitch", "value": "4.3 inch (109.2mm) geometric pitch"},
-          {"name": "Max Thrust", "value": "1,850g per propeller (static)"},
-          {"name": "Balance Standard", "value": "<5mg·mm residual unbalance"},
-          {"name": "Lead Time", "value": "2-3 working days"}
+          {
+            "name": "Material",
+            "value": "PA12-GF (Glass-Filled Nylon 12)"
+          },
+          {
+            "name": "Process",
+            "value": "SLS Printing + Dynamic Balancing"
+          },
+          {
+            "name": "Diameter",
+            "value": "5.1 inch (129.5mm) pitch"
+          },
+          {
+            "name": "Pitch",
+            "value": "4.3 inch (109.2mm) geometric pitch"
+          },
+          {
+            "name": "Max Thrust",
+            "value": "1,850g per propeller (static)"
+          },
+          {
+            "name": "Balance Standard",
+            "value": "<5mg·mm residual unbalance"
+          },
+          {
+            "name": "Lead Time",
+            "value": "2-3 working days"
+          }
         ]
       }
     },
@@ -427,13 +826,34 @@
         "images": [],
         "videos": [],
         "specs": [
-          {"name": "Material", "value": "304 Stainless Steel (1.5mm sheet)"},
-          {"name": "Process", "value": "Laser Cutting + CNC Bending + TIG Welding + Powder Coat"},
-          {"name": "Dimensions", "value": "200mm × 150mm × 100mm"},
-          {"name": "Protection Rating", "value": "IP65 (dust-tight + water jet resistant)"},
-          {"name": "Surface", "value": "RAL 7035 powder coat, semi-gloss"},
-          {"name": "Mounting", "value": "Internal DIN rail + external wall-mount brackets"},
-          {"name": "Lead Time", "value": "5-8 working days"}
+          {
+            "name": "Material",
+            "value": "304 Stainless Steel (1.5mm sheet)"
+          },
+          {
+            "name": "Process",
+            "value": "Laser Cutting + CNC Bending + TIG Welding + Powder Coat"
+          },
+          {
+            "name": "Dimensions",
+            "value": "200mm × 150mm × 100mm"
+          },
+          {
+            "name": "Protection Rating",
+            "value": "IP65 (dust-tight + water jet resistant)"
+          },
+          {
+            "name": "Surface",
+            "value": "RAL 7035 powder coat, semi-gloss"
+          },
+          {
+            "name": "Mounting",
+            "value": "Internal DIN rail + external wall-mount brackets"
+          },
+          {
+            "name": "Lead Time",
+            "value": "5-8 working days"
+          }
         ]
       }
     }
