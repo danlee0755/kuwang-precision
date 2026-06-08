@@ -173,6 +173,7 @@
 
   // ── Products Panel ─────────────────────────
   function renderProductsPanel(container) {
+    container.innerHTML = '';  // 先清空，防止重复列出
     var products = config.products || [];
     var panel = h('div', {className: 'admin-panel active'});
 

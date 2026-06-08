@@ -13,14 +13,14 @@
     }
   },
   "homepage": {
-    "videoUrl": "C:\\Users\\MSI\\rapid-prototyping-website\\videos\\601.mp4",
+    "videoUrl": "videos/601.mp4",
     "videoPoster": ""
   },
   "products": [
     {
       "id": "id_1780261801368_2d6a5x",
       "name": "Metal_CNC-Aluminum-Precision-Enclosure",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\01_Metal_CNC-Aluminum-Precision-Enclosure.png",
+      "thumbnail": "images/601/01_Metal_CNC-Aluminum-Precision-Enclosure.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -33,7 +33,7 @@
     {
       "id": "id_1780262479772_letlal",
       "name": "Stainless-Steel-Precision-Gear-Assembly",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\02_Metal_Stainless-Steel-Precision-Gear-Assembly.png",
+      "thumbnail": "images/601/02_Metal_Stainless-Steel-Precision-Gear-Assembly.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -46,7 +46,7 @@
     {
       "id": "id_1780262485150_mbs4xh",
       "name": "Copper-Heatsink",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\03_Metal_Copper-Heatsink.png",
+      "thumbnail": "images/601/03_Metal_Copper-Heatsink.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -59,7 +59,7 @@
     {
       "id": "id_1780262489564_2g5g1l",
       "name": "Titanium-Medical-Orthopedic-Bracket",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\04_Metal_Titanium-Medical-Orthopedic-Bracket.png",
+      "thumbnail": "images/601/04_Metal_Titanium-Medical-Orthopedic-Bracket.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -72,7 +72,7 @@
     {
       "id": "id_1780262492888_oeaxl4",
       "name": "Automotive-Stamped-Metal-Part",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\05_Metal_Automotive-Stamped-Metal-Part.png",
+      "thumbnail": "images/601/05_Metal_Automotive-Stamped-Metal-Part.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -85,7 +85,7 @@
     {
       "id": "id_1780262495478_eaazjd",
       "name": "Precision-Injection-Mold",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\06_Metal_Precision-Injection-Mold.png",
+      "thumbnail": "images/601/06_Metal_Precision-Injection-Mold.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -98,7 +98,7 @@
     {
       "id": "id_1780262500488_jsgaa0",
       "name": "Plastic_ABS-Consumer-Electronics-Housing",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\07_Plastic_ABS-Consumer-Electronics-Housing.png",
+      "thumbnail": "images/601/07_Plastic_ABS-Consumer-Electronics-Housing.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -111,7 +111,7 @@
     {
       "id": "id_1780262503770_qieik2",
       "name": "Plastic_PMMA-Optical-Lens-Array",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\08_Plastic_PMMA-Optical-Lens-Array.png",
+      "thumbnail": "images/601/08_Plastic_PMMA-Optical-Lens-Array.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -124,7 +124,7 @@
     {
       "id": "id_1780262511952_i474kg",
       "name": "Plastic_Nylon-PA66-Functional-Structural-Part",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\09_Plastic_Nylon-PA66-Functional-Structural-Part.png",
+      "thumbnail": "images/601/09_Plastic_Nylon-PA66-Functional-Structural-Part.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -137,7 +137,7 @@
     {
       "id": "id_1780262514836_0p43ui",
       "name": "Metal-Plastic_Hybrid_Power-Tool-Body",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\10_Metal-Plastic_Hybrid_Power-Tool-Body.png",
+      "thumbnail": "images/601/10_Metal-Plastic_Hybrid_Power-Tool-Body.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -150,7 +150,7 @@
     {
       "id": "id_1780262519812_qnsz43",
       "name": "Plastic_Hybrid_Smart-Wearable-Enclosure",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\11_Metal-Plastic_Hybrid_Smart-Wearable-Enclosure.png",
+      "thumbnail": "images/601/11_Metal-Plastic_Hybrid_Smart-Wearable-Enclosure.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
@@ -163,7 +163,7 @@
     {
       "id": "id_1780262524210_09nwkd",
       "name": "Plastic_Hybrid_Automotive-Interior-Console",
-      "thumbnail": "C:\\Users\\MSI\\rapid-prototyping-website\\images\\601\\12_Metal-Plastic_Hybrid_Automotive-Interior-Console.png",
+      "thumbnail": "images/601/12_Metal-Plastic_Hybrid_Automotive-Interior-Console.png",
       "thumbnailVideo": "",
       "shortDesc": "Brief description (max 20 words).",
       "details": {
