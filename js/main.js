@@ -72,7 +72,7 @@ const APP = (function() {
       if (saved) { config = JSON.parse(saved); return; }
     } catch(e) {}
     try {
-      const resp = await fetch('./data/config.json');
+      const resp = await fetch('./data/config.json?v=' + Date.now());
       config = await resp.json();
     } catch(e) {
       config = { company:{name:'',intro:'',contactPerson:'',phone:'',address:'',email:'',social:{whatsapp:'',facebook:'',linkedin:''}}, homepage:{videoUrl:'',videoPoster:''}, products:[] };

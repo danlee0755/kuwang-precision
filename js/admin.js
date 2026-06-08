@@ -57,7 +57,7 @@
   // ── Data ───────────────────────────────────
   async function loadConfig() {
     try { var s = localStorage.getItem('kuwang_config'); if (s) { config = JSON.parse(s); return; } } catch(e) {}
-    try { var r = await fetch('./data/config.json'); config = await r.json(); } catch(e) {
+    try { var r = await fetch('./data/config.json?v=' + Date.now()); config = await r.json(); } catch(e) {
       config = { company:{name:'',intro:'',contactPerson:'',phone:'',address:'',email:'',social:{whatsapp:'',facebook:'',linkedin:''}}, homepage:{videoUrl:'',videoPoster:''}, products:[] };
     }
   }
